@@ -109,7 +109,7 @@ public class FooterPageTest_I {
 	
 	
     
-	// Safari
+	// Safari---FAQ, Returns,Terms and Conditions, ShippingPolicy
 	@Test
 	public void FooterPageTestforSafari() throws Exception {
 		WebElement FAQ_safari = safari_driver.findElement(By.xpath(".//*[@id='footer']/div/div/div[1]/div[3]/ul/li[2]/a"));
@@ -172,7 +172,7 @@ public class FooterPageTest_I {
 }
    
     
-	//Chrome
+	//Chrome---FAQ, Returns,Terms and Conditions, ShippingPolicy
 	@Test
 	public void FooterPageTestforChrome() throws Exception {
 		WebElement FAQ_chrome = chrome_driver.findElement(By.xpath(".//*[@id='footer']/div/div/div[1]/div[3]/ul/li[2]/a"));
@@ -245,10 +245,8 @@ public class FooterPageTest_I {
 	public void tearDown() throws Exception {
        
 		firefox_driver.quit();
-		
 		safari_driver.quit();
-	
-		chrome_driver.quit();
+        chrome_driver.quit();
        
 	}
 }
